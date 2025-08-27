@@ -13,12 +13,15 @@ header {
   background-color: #000;
 }
 .navbar {
+  top: 0;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   position: relative;
   border-bottom: 1px solid #333;
+  z-index: 1000;
 }
 .brand {
   display: flex;
@@ -30,7 +33,7 @@ header {
   width: auto;
 }
 .brand h1 {
-  font-size: 28px;
+  font-size: 30px;
   margin: 0;
   color: white;
 }
@@ -164,10 +167,11 @@ footer {
   margin-top: 0; /* removes extra space */
 }
 footer h2 {
-  font-size: 24px;
+  font-size: 40px;
   text-align: center;
   color: white;
-  margin-bottom: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 footer p {
   font-size: 14px;
@@ -221,9 +225,12 @@ footer p {
   text-align: center;
 }
 .newsletter-box h2 {
+  font-size: 30px;
+  margin-top: auto;
   color: #a32020;
 }
 .newsletter-box p {
+  font-size: 14px;
   color: white;
 }
 .newsletter-box input[type="email"] {
@@ -253,6 +260,7 @@ footer p {
   margin-top: 10px;
 }
 
+/* FOOTER
 .footer-bottom {
   text-align: center;
   font-size: 12px;
@@ -266,4 +274,4 @@ footer p {
 }
 .footer-bottom a:hover {
   color: #a32020;
-}
+} */
