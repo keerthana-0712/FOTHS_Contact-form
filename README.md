@@ -13,6 +13,26 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
+# FOTHS Website
+
+This is the homepage project for **FOTHS**, featuring a modern design with animations and newsletter subscription.
+
+
+## 🚀 Features
+- Sticky **navigation bar** with hover effects.
+- **Hero section** with fade-in animations.
+- Animated **floating flame icon** near scrollbar.
+- **Newsletter subscription** form with inline confirmation.
+- Responsive **footer** with copyright.
+
+
+## 📂 Project Structure
+src/FOTHS
+│── homepage.html # Main HTML file
+│── homepage.css # Styling
+│── homepage.js # Interactivity
+│── logo.png # Project logo
+└── README.md # Documentation
 
 ## ⚙️ How to Run
 1. Download or clone this repository.
