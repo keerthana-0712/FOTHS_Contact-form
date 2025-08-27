@@ -29,10 +29,10 @@ This is the homepage project for **FOTHS**, featuring a modern design with anima
 ## 📂 Project Structure
 src/FOTHS
 │── homepage.html # Main HTML file <br />
-│── homepage.css # Styling
-│── homepage.js # Interactivity
-│── logo.png # Project logo
-└── README.md # Documentation
+│── homepage.css # Styling <br />
+│── homepage.js # Interactivity <br />
+│── logo.png # Project logo <br />
+└── README.md # Documentation <br />
 
 ## ⚙️ How to Run
 1. Download or clone this repository.
