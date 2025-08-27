@@ -106,10 +106,6 @@ header {
 }
 
 
-
-
-
-
 /* FOOTER */
 footer {
   background-color: #000;
@@ -245,8 +241,8 @@ footer p {
   z-index: 999;
 }
 
-/* The flame image (drop) */
-.drop {
+/* The flame image (flame) */
+.flame {
   width: 50px;
   height: auto;
 

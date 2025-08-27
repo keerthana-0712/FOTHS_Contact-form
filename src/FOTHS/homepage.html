@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FOTHS</title>
   <link rel="icon" type="image/x-icon" href="logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
@@ -62,10 +61,10 @@
 
   <!-- Floating Flame (fixed beside scrollbar) -->
   <div class="flame-container">
-    <div class="flame"> 
-    <svg viewBox="0 0 40 120" xmlns="http://www.w3.org/2000/svg" class="drop">
+    <div class="flame">
+    <svg viewBox="0 0 40 120" xmlns="http://www.w3.org/2000/svg" class="flame">
       <defs>
-        <linearGradient id="dropGradient" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="flameGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#FFF45B" />
           <stop offset="25%" stop-color="#FFB22E" />
           <stop offset="45%" stop-color="#FF7A18" />
@@ -75,10 +74,10 @@
         </linearGradient>
       </defs>
 
-      <path d="M20 0 
-               C 28 90, 38 100, 20 100 
+      <path d="M20 0
+               C 28 90, 38 100, 20 100
                C 2 90, 12 100, 20 10 Z"
-            fill="url(#dropGradient)"/>
+            fill="url(#flameGradient)"/>
     </svg>
     </div>
   </div>
@@ -108,18 +107,22 @@
     </div>
 
     <div class="newsletter">
-      <div class="newsletter-box">
-        <h2>Join the Newsletter</h2>
-        <p>Receive FOTHS Updates and announcements directly to your inbox.</p>
-        <form action="javascript:void(0);" onsubmit="alert('Subscribed!');">
-          <input type="email" name="email" placeholder="Enter your email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-        <p class="privacy">We respect your privacy. No spam, only essential updates. </p>
-      </div>
-    </div>
+  <div class="newsletter-box">
+    <h2>Join the Newsletter</h2>
+    <p>Receive FOTHS Updates and announcements directly to your inbox.</p>
 
-    
+    <!-- Form -->
+    <form id="newsletter-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p class="privacy">We respect your privacy. No spam, only essential updates. </p>
+  </div>
+</div>
+
+    <!-- Link external JavaScript -->
+<script src="homepage.js"></script>
 
     <div class="footer-bottom">
       <p>© 2025 FOTHS. All rights reserved.</p>
