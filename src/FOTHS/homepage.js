@@ -7,4 +7,3 @@ newsletterForm.addEventListener("submit", function (event) {
   alert("Subscribed!");
 });
     newsletterForm.reset(); // Resets the form fields
-    

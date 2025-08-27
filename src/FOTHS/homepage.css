@@ -51,6 +51,7 @@ header {
   color: #a32020;
 }
 
+
 /* MAIN TEXT */
 .main-text {
   text-align: center;
@@ -104,6 +105,53 @@ header {
 .flame-intro button:hover {
   background: #811717;
 }
+
+
+/* FLOATING FLAME */
+/* Flame on the side */
+.flame-container {
+  position: absolute;   /* instead of fixed */
+  right: 5px;           /* keeps it near scrollbar */
+  top: 50%;             /* vertically middle */
+  transform: translateY(-50%);
+  width: 40px;
+  height: 60px;
+  pointer-events: none; /* so it doesn’t block clicks */
+  z-index: 999;
+}
+
+.floating-flame {
+  position: fixed;
+  top: 50%;
+  right: 8px; /* close to scrollbar */
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+/* The flame image (flame) */
+.flame {
+  width: 50px;
+  height: auto;
+
+  /* Apply BOTH animations */
+  animation: flicker 1.5s infinite alternate,
+             flame 12s ease-in-out infinite;
+}
+
+/* Flicker Effect */
+@keyframes flicker {
+  0%   { transform: scale(1) translateY(0); opacity: 0.95; }
+  50%  { transform: scale(1.05) translateY(-2px); opacity: 1; }
+  100% { transform: scale(0.97) translateY(2px); opacity: 0.9; }
+}
+
+/* Up and Down Floating Movement */
+@keyframes flame {
+  0%   { transform: translateY(-250px); }
+  50%  { transform: translateY(100px); }
+  100% { transform: translateY(-250px); }
+}
+
 
 
 /* FOOTER */
@@ -218,49 +266,4 @@ footer p {
 }
 .footer-bottom a:hover {
   color: #a32020;
-}
-
-/* FLOATING FLAME */
-/* Flame on the side */
-.flame-container {
-  position: absolute;   /* instead of fixed */
-  right: 5px;           /* keeps it near scrollbar */
-  top: 50%;             /* vertically middle */
-  transform: translateY(-50%);
-  width: 40px;
-  height: 60px;
-  pointer-events: none; /* so it doesn’t block clicks */
-  z-index: 999;
-}
-
-.floating-flame {
-  position: fixed;
-  top: 50%;
-  right: 8px; /* close to scrollbar */
-  transform: translateY(-50%);
-  z-index: 999;
-}
-
-/* The flame image (flame) */
-.flame {
-  width: 50px;
-  height: auto;
-
-  /* Apply BOTH animations */
-  animation: flicker 1.5s infinite alternate,
-             flame 12s ease-in-out infinite;
-}
-
-/* Flicker Effect */
-@keyframes flicker {
-  0%   { transform: scale(1) translateY(0); opacity: 0.95; }
-  50%  { transform: scale(1.05) translateY(-2px); opacity: 1; }
-  100% { transform: scale(0.97) translateY(2px); opacity: 0.9; }
-}
-
-/* Up and Down Floating Movement */
-@keyframes flame {
-  0%   { transform: translateY(-250px); }
-  50%  { transform: translateY(100px); }
-  100% { transform: translateY(-250px); }
 }
