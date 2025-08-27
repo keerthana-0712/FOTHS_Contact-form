@@ -28,7 +28,7 @@ This is the homepage project for **FOTHS**, featuring a modern design with anima
 
 ## 📂 Project Structure
 src/FOTHS
-│── homepage.html # Main HTML file
+│── homepage.html # Main HTML file <br />
 │── homepage.css # Styling
 │── homepage.js # Interactivity
 │── logo.png # Project logo
