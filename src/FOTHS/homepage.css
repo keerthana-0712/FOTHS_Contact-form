@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+  font-family: 'Crimson Text', serif;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 10px 10px 0px;
+  background-color: #000;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  border-bottom: 1px solid #333;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-image {
+  height: 70px;
+  width: auto;
+}
+.brand h1 {
+  font-size: 28px;
+  margin: 0;
+  color: white;
+}
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #a32020;
+}
+
+/* MAIN TEXT */
+.main-text {
+  text-align: center;
+  margin: 200px 20px;
+  font-size: 40px;
+}
+.highlight {
+  color: #a32020;
+}
+
+
+/* FLAME INTRO SECTION */
+.flame-intro {
+  text-align: center;
+  padding: 100px 20px;
+  background: #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.flame-intro h2 {
+  color: #a32020;
+  font-size: 32px;
+}
+.flame-intro p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 10px auto 20px;
+  color: #ccc;
+}
+.flame-intro ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+.flame-intro li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.flame-intro button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #a32020;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.flame-intro button:hover {
+  background: #811717;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 50px 20px 20px;
+  font-family: 'Crimson Text', serif;
+  /*border-top: 1px solid #333;*/
+  margin-top: 0; /* removes extra space */
+}
+footer h2 {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+}
+footer p {
+  font-size: 14px;
+  text-align: center;
+  color: #a32020;
+  margin: 4px 0;
+}
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 0px;
+}
+.footer-columns div {
+  text-align: center;
+  min-width: 5px;
+}
+.footer-columns h4 {
+  align-items: center;
+  text-align: center;
+  color: #a32020;
+  margin-bottom: 10px;
+}
+.footer-columns a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 0;
+}
+.footer-columns a:hover {
+  color: #a32020;
+}
+.newsletter {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #000;
+  color: white;
+}
+.newsletter-box {
+  background-color: transparent;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+.newsletter-box h2 {
+  color: #a32020;
+}
+.newsletter-box p {
+  color: white;
+}
+.newsletter-box input[type="email"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+.newsletter-box button {
+  padding: 10px 20px;
+  background-color: #a32020;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.newsletter-box button:hover {
+  background-color: #811717;
+}
+.newsletter-box .privacy {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 30px;
+}
+.footer-bottom a {
+  color: #888;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer-bottom a:hover {
+  color: #a32020;
+}
+
+/* FLOATING FLAME */
+/* Flame on the side */
+.flame-container {
+  position: absolute;   /* instead of fixed */
+  right: 5px;           /* keeps it near scrollbar */
+  top: 50%;             /* vertically middle */
+  transform: translateY(-50%);
+  width: 40px;
+  height: 60px;
+  pointer-events: none; /* so it doesn’t block clicks */
+  z-index: 999;
+}
+
+.floating-flame {
+  position: fixed;
+  top: 50%;
+  right: 8px; /* close to scrollbar */
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+/* The flame image (drop) */
+.drop {
+  width: 50px;
+  height: auto;
+
+  /* Apply BOTH animations */
+  animation: flicker 1.5s infinite alternate,
+             flame 12s ease-in-out infinite;
+}
+
+/* Flicker Effect */
+@keyframes flicker {
+  0%   { transform: scale(1) translateY(0); opacity: 0.95; }
+  50%  { transform: scale(1.05) translateY(-2px); opacity: 1; }
+  100% { transform: scale(0.97) translateY(2px); opacity: 0.9; }
+}
+
+/* Up and Down Floating Movement */
+@keyframes flame {
+  0%   { transform: translateY(-250px); }
+  50%  { transform: translateY(100px); }
+  100% { transform: translateY(-250px); }
+}

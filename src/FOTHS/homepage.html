@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOTHS</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="main-header">
+  <div class="navbar">
+    <div class="brand">
+      <a href="/" class="logo">
+        <img src="logo.png" alt="FOTHS Flame Logo" class="logo-image" />
+      </a>
+      <h1>FOTHS Flame</h1>
+    </div>
+
+    <!-- Nav links -->
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Flame</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+
+  <!-- Main Message -->
+  <div class="main-text">
+    Fire <span class="highlight">Never</span> Fades. <br />
+    It <span class="highlight">Lives</span> Within. It <span class="highlight">Transforms</span> Everything.
+  </div>
+
+
+<!-- 🔥 FLAME INTRO SECTION (Homepage) -->
+  <section class="flame-intro">
+    <h2>🔥 Meet Flame - Your AI </h2>
+    <p>
+      Flame is more than just a chatbot, it's your <strong>24/7 digital companion</strong>,
+      ready to <strong>answer questions, guide you, and make conversations smarter and easier</strong>.
+    </p>
+    <ul>
+      <li>💡 Instant Answers - Get quick, accurate responses anytime.</li>
+      <li>🔥 Always On - Available 24/7 to assist you.</li>
+      <li>🌎 Versatile - From solving doubts to friendly chat, Flame does it all.</li>
+      <li>🎯 Simple & Interactive - Easy to use, engaging to talk with.</li>
+    </ul>
+    <button id="openChat">💬 Chat with Flame</button>
+    <p class="note">*Click the button to start chatting with Flame!</p>
+  </section>
+
+<br />
+<br />
+<br />
+
+
+  <!-- Floating Flame (fixed beside scrollbar) -->
+  <div class="flame-container">
+    <div class="flame"> 
+    <svg viewBox="0 0 40 120" xmlns="http://www.w3.org/2000/svg" class="drop">
+      <defs>
+        <linearGradient id="dropGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF45B" />
+          <stop offset="25%" stop-color="#FFB22E" />
+          <stop offset="45%" stop-color="#FF7A18" />
+          <stop offset="65%" stop-color="#D9381E" />
+          <stop offset="85%" stop-color="#8C1C13" />
+          <stop offset="100%" stop-color="#4A201F" />
+        </linearGradient>
+      </defs>
+
+      <path d="M20 0 
+               C 28 90, 38 100, 20 100 
+               C 2 90, 12 100, 20 10 Z"
+            fill="url(#dropGradient)"/>
+    </svg>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div style="text-align: center;">
+      <h2>FOTHS</h2>
+      <p>The Fire Never Fades. It Transforms Everything.</p>
+    </div>
+
+    <div class="footer-columns">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Flame</a>
+      </div>
+      
+      <div>
+        <h4>Connect</h4>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Email Us</a>
+        <a href="#">Subscribe</a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <div class="newsletter-box">
+        <h2>Join the Newsletter</h2>
+        <p>Receive FOTHS Updates and announcements directly to your inbox.</p>
+        <form action="javascript:void(0);" onsubmit="alert('Subscribed!');">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="privacy">We respect your privacy. No spam, only essential updates. </p>
+      </div>
+    </div>
+
+    
+
+    <div class="footer-bottom">
+      <p>© 2025 FOTHS. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
