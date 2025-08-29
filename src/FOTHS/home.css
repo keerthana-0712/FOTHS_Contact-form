@@ -13,13 +13,16 @@ header {
   background-color: #000;
 }
 .navbar {
+  position: fixed;
   top: 0;
-  position: sticky;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  position: relative;
   border-bottom: 1px solid #333;
   z-index: 1000;
 }
@@ -57,8 +60,9 @@ header {
 
 /* MAIN TEXT */
 .main-text {
+  position: center;
   text-align: center;
-  margin: 200px 20px;
+  margin: 300px 20px;
   font-size: 40px;
 }
 .highlight {

@@ -1,11 +1,8 @@
 ## Getting Started
-
 Welcome to the VS Code. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
-
 The workspace contains two folders by default, where:
-
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 
@@ -14,7 +11,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
 # FOTHS Website
-
 This is the homepage project for **FOTHS**, featuring a modern design with animations and newsletter subscription.
 
 
@@ -34,6 +30,7 @@ src/FOTHS <br />
 │── logo.png # Project logo <br />
 └── README.md # Documentation <br />
 
+
 ## ⚙️ How to Run
 1. Download or clone this repository.
 2. Place all files in the same folder (`homepage.html`, `homepage.css`, `homepage.js`, `logo.png`).
@@ -48,7 +45,7 @@ src/FOTHS <br />
 
 
 ## 📧 Newsletter
-The form collects email addresses and shows a simple confirmation popup (`Subscribed!`).  
+The form collects email addresses and shows a simple confirmation popup (`Subscribed!`).
 No backend integration is added yet.
 
 
