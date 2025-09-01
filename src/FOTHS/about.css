@@ -1,79 +1,103 @@
-/* General Page Styling */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.8;
-  background: #0d0d0d;              /* Dark theme */
-  color: #f5f5f5;                  /* Light text */
-  padding: 100px 15%;              /* To avoid navbar overlap */
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #f5f5f5;
+    line-height: 1.7;
 }
 
-/* Headings */
-h1, h2, h3 {
-  color: #ff4500;                  /* Flame orange */
-  text-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
+/* Navbar */
+.navbar {
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
 }
 
-/* Paragraph Styling */
-p {
-  font-size: 1.1rem;
-  text-align: justify;
-  margin-bottom: 20px;
+.navbar .logo {
+    display: flex;
+    align-items: center;
 }
 
-/* Section Titles with Glow */
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  border-left: 4px solid #ff6347;
-  background: rgba(255, 99, 71, 0.05);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 69, 0, 0.2);
+.navbar .logo img {
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
 }
 
-/* Highlighted Quotes or Mission */
-p strong, blockquote {
-  color: #ff6347;
-  font-weight: bold;
-  text-shadow: 0 0 6px rgba(255, 99, 71, 0.7);
+.navbar h1 {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
-/* Resume / LinkedIn / Portfolio Sections */
-h2 {
-  margin-top: 40px;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #ff4500;
-  padding-bottom: 5px;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Resume, LinkedIn Taglines (Styled as Cards) */
-blockquote {
-  font-style: italic;
-  margin: 15px 0;
-  padding: 15px 20px;
-  background: rgba(255, 140, 0, 0.1);
-  border-left: 4px solid #ff4500;
-  border-radius: 8px;
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* Emphasized Mission Taglines */
-.tagline {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 10px 0;
-  color: #ffa500;
-  text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #000;
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  body {
-    padding: 80px 20px;
-  }
+/* About Section */
+.about-container {
+    max-width: 1000px;
+    margin: 120px auto 50px auto; /* space for fixed navbar */
+    padding: 20px;
+    background: rgba(255, 69, 0, 0.05);
+    border: 1px solid rgba(255, 69, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
 
-  h1, h2, h3 {
+.about-container h2 {
+    font-size: 28px;
+    color: #ff7518;
+    margin-bottom: 20px;
     text-align: center;
-  }
+}
+
+.about-container p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #e0e0e0;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    border-top: 1px solid #333;
 }
