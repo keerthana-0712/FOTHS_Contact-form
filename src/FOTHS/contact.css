@@ -58,33 +58,66 @@ header {
 }
 
 
-
-
-
-
-/* About Section */
-.about-container {
-    max-width: 1000px;
-    margin: 120px auto 50px auto; /* space for fixed navbar */
-    padding: 20px;
-    background: rgba(255, 69, 0, 0.05);
-    border: 1px solid rgba(255, 69, 0, 0.2);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+/* Contact Section */
+.contact-section {
+  margin-top: 120px; /* space for fixed navbar */
+  text-align: center;
 }
 
-.about-container h2 {
-    font-size: 28px;
-    color: #ff7518;
-    margin-bottom: 20px;
-    text-align: center;
+.contact-section h2 {
+  color: #ff4500;
+  margin-bottom: 20px;
 }
 
-.about-container p {
-    margin-bottom: 18px;
-    font-size: 16px;
-    color: #e0e0e0;
-    text-align: justify;
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff4500;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background: #ff4500;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e63900;
+}
+
+/* Error message */
+#errorMsg {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
 }
 
 /* Footer */
