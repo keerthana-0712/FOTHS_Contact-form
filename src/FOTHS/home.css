@@ -61,6 +61,13 @@ header {
   color: #a32020;
 }
 
+/* === GRID LAYOUT ADDED === */
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  padding: 140px 20px 60px; /* 🔥 top padding for fixed navbar */
+}
 
 /* MAIN TEXT */
 .main-text {
@@ -68,6 +75,7 @@ header {
   text-align: center;
   margin: 300px 20px;
   font-size: 40px;
+  grid-column: 1 / -1; /* spans all columns */
 }
 .highlight {
   color: #a32020;
@@ -81,6 +89,7 @@ header {
   background: #000;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  grid-column: 1 / -1; /* spans all columns */
 }
 .flame-intro h2 {
   color: #a32020;
@@ -146,7 +155,7 @@ header {
 
   /* Apply BOTH animations */
   animation: flicker 1.5s infinite alternate,
-             flame 12s ease-in-out infinite;
+            flame 12s ease-in-out infinite;
 }
 
 /* Flicker Effect */
@@ -195,6 +204,7 @@ footer p {
   flex-wrap: wrap;
   text-align: left;
   margin-top: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .footer-columns div {
   text-align: center;
@@ -219,9 +229,11 @@ footer p {
 .newsletter {
   display: flex;
   justify-content: center;
+  place-items: center;
   padding: 40px 20px;
   background-color: #000;
   color: white;
+  grid-column: 1 / -1; /* spans all columns */
 }
 .newsletter-box {
   background-color: transparent;
@@ -267,3 +279,20 @@ footer p {
   color: #888;
   margin-top: 10px;
 }
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 120px 15px 40px;
+    gap: 40px;
+  }
+  .main-text {
+    font-size: 28px;
+    margin: 60px 10px;
+  }
+  .flame-intro {
+    padding: 50px 15px;
+  }
+}
+
