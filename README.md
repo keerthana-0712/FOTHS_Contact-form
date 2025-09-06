@@ -56,15 +56,14 @@ To-Do List (standalone) <br />
 │── todolist.html <br />
 │── todolist.css <br />
 │── todolist.js <br />
-## Contact Page <br />
+Contact Page <br />
 │── contact.html <br />
 │── contact.css <br />
 │── contact.js <br />
-
-│── logo.png           (Project logo)
-│── screenshots/       # Screenshots for README
-│── gifs/              # GIF demos for README
-└── README.md          # Documentation
+Project logo <br />
+│── logo.png <br />
+Documentation <br />
+└── README.md <br />
 
 
 ## ⚙️ How to Run
