@@ -57,106 +57,67 @@ header {
   color: #a32020;
 }
 
-/* Layout */
-.container {
+
+/* Products section */
+.products-container {
+  max-width: 1100px;
+  margin: 140px auto 50px;
+  padding: 20px;
+  text-align: center;
+}
+.products-container h2 {
+  font-size: 32px;
+  color: #a32020;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+/* Product cards grid */
+.products-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "info form";
   gap: 30px;
-  padding: 140px 40px 40px; /* 🔥 Added top padding to avoid overlap with navbar */
 }
-
-/* Info Section */
-.info h1 {
-  grid-area: info;
-  margin-bottom: 20px;
-  color: #ff6347;
-  text-shadow: 0 0 15px #ff4500;
+.product-card {
+  background: #111;
+  border: 1px solid rgba(255, 117, 24, 0.3);
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 117, 24, 0.15);
 }
-.info p {
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 10px #a32020;
+}
+.product-card h3 {
+  color: #a32020;
+  font-size: 24px;
   margin-bottom: 15px;
-  font-size: 1.1rem;
-  line-height: 1.6;
+}
+.product-card p {
+  font-size: 16px;
   color: #ddd;
+  margin-bottom: 20px;
 }
-
-
-/* Contact Form Section */
-.form-section {
-  background: rgba(255, 69, 0, 0.05);
-  padding: 20px; /* 🔥 increased padding inside */
-  border: 1px solid rgba(255, 69, 0, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.7);
-  grid-area: form;
-  max-width: 750px; /* 🔥 wider form box */
-  width: 90%;       /* takes full width up to max */
-  margin: 0 auto;    /* keeps it centered */
-}
-
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: 12px 0 5px;
-  color: #ff4500; /* 🔥 Fire orange labels */
-}
-
-input, textarea {
-  padding: 12px;
-  border: 1px solid #ff6347;
-  border-radius: 5px;
-  background: #0d0d0d;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #a32020;
   color: #fff;
-  outline: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
-
-input:focus, textarea:focus {
-  border-color: #ff4500;
-  box-shadow: 0 0 10px #ff4500;
+.btn:hover {
+  background: #a32020;
+  box-shadow: 0 0 10px #a32020;
 }
-
-button {
-  margin-top: 20px;
-  padding: 12px;
-  background: linear-gradient(45deg, #ff4500, #ff6347);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-button:hover {
-  background: linear-gradient(45deg, #ff6347, #ff4500);
-  box-shadow: 0 0 12px #ff4500;
-}
-
-/* Error Message */
-.error {
-  color: #ff3333;
-  margin-top: 10px;
-  font-size: 0.9rem;
-  text-shadow: 0 0 5px #ff0000;
-}
-
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr; /* 🔥 Stack content */
-    padding: 120px 20px;
-  }
-  .nav-links {
-    flex-direction: column;
-    position: static;
-    transform: none;
-    margin-top: 10px;
-  }
-}
-
 
 /* FOOTER */
 footer {
@@ -210,4 +171,3 @@ footer p {
 .footer-columns a:hover {
   color: #a32020;
 }
-

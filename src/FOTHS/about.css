@@ -71,6 +71,7 @@ header {
     border: 1px solid rgba(255, 69, 0, 0.2);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    grid-template-columns: 2fr 1fr;
 }
 
 .about-container h2 {
@@ -87,7 +88,10 @@ header {
     text-align: justify;
 }
 
-/* Footer */
+
+
+
+/* FOOTER */
 footer {
   background-color: #000;
   color: white;
@@ -96,10 +100,47 @@ footer {
   /*border-top: 1px solid #333;*/
   margin-top: 0; /* removes extra space */
 }
-
+footer h2 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 footer p {
   font-size: 14px;
   text-align: center;
   color: #a32020;
   margin: 4px 0;
 }
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.footer-columns div {
+  text-align: center;
+  min-width: 5px;
+}
+.footer-columns h4 {
+  align-items: center;
+  text-align: center;
+  color: #a32020;
+  margin-bottom: 10px;
+}
+.footer-columns a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 0;
+}
+.footer-columns a:hover {
+  color: #a32020;
+}
+
