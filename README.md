@@ -1,80 +1,82 @@
 # 🌐 FOTHS Website
+
+[![Repo](https://img.shields.io/badge/GitHub-FOTHS__Flame-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/keerthana-0712/FOTHS_Flame)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)  
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)  
-[![Obsidian](https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md/)  
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+[![Obsidian](https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md/)
 
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)  
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)
 
 
 This is the homepage project for **FOTHS**, featuring a modern design with animations and newsletter subscription.
 
 ## 🚀 Features
-### 🏠 Home  
-- Sticky navigation bar with hover effects  
-- Hero section with fade-in animations  
-- Floating flame icon near the scrollbar  
+### 🏠 Home
+- Sticky navigation bar with hover effects
+- Hero section with fade-in animations
+- Floating flame icon near the scrollbar
 
-### ℹ️ About  
-- Introduction to **FOTHS** vision and values  
-- Styled text and section highlights  
+### ℹ️ About
+- Introduction to **FOTHS** vision and values
+- Styled text and section highlights
 
-### 🛒 Products  
-- 🔥 **Flame** – floating flame animation  
-- ✅ **To-Do List** – interactive task manager (add/remove tasks)  
+### 🛒 Products
+- 🔥 **Flame** – floating flame animation
+- ✅ **To-Do List** – interactive task manager (add/remove tasks)
 
-### 📩 Contact  
-- Responsive contact form  
-- Styled inputs and clean UI  
+### 📩 Contact
+- Responsive contact form
+- Styled inputs and clean UI
 
-### 📧 Newsletter  
-- Inline subscription with confirmation popup (`Subscribed!`)  
-- No backend integration yet  
+### 📧 Newsletter
+- Inline subscription with confirmation popup (`Subscribed!`)
+- No backend integration yet
 
 
 ### 📂 Project Structure
 src/FOTHS
-│── home.html          # Homepage  
-│── home.css  
-│── home.js  
+│── home.html          # Homepage
+│── home.css
+│── home.js
 
-│── about.html         # About Page  
-│── about.css  
-│── about.js  
+│── about.html         # About Page
+│── about.css
+│── about.js
 
-│── products.html      # Products (Flame + To-Do List)  
-│── products.css  
-│── products.js  
-│── todolist.html      # To-Do List (standalone)  
-│── todolist.css  
-│── todolist.js  
+│── products.html      # Products (Flame + To-Do List)
+│── products.css
+│── products.js
+│── todolist.html      # To-Do List (standalone)
+│── todolist.css
+│── todolist.js
 
-│── contact.html       # Contact Page  
-│── contact.css  
-│── contact.js  
+│── contact.html       # Contact Page
+│── contact.css
+│── contact.js
 
-│── logo.png           # Project logo  
-│── screenshots/       # Screenshots for README  
-│── gifs/              # GIF demos for README  
-└── README.md          # Documentation  
+│── logo.png           # Project logo
+│── screenshots/       # Screenshots for README
+│── gifs/              # GIF demos for README
+└── README.md          # Documentation
 
 
 ## ⚙️ How to Run
-### Prerequisites  
-- A modern web browser (Chrome, Edge, Firefox, Safari)  
-- *(Optional)* VS Code for editing  
+### Prerequisites
+- A modern web browser (Chrome, Edge, Firefox, Safari)
+- *(Optional)* VS Code for editing
 
-### Run Locally  
+### Run Locally
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/FOTHS.git
+git clone https://github.com/keerthana-0712/FOTHS_Flame.git
 
 # Open the folder
-cd FOTHS/src
+cd FOTHS_Flame/src
 
 # Launch the homepage in browser
 open home.html
