@@ -43,23 +43,23 @@ src/FOTHS <br />
 Homepage <br />
 │── home.html <br />
 │── home.css <br />
-└── home.js <br />
+│── home.js <br />
 About Page <br />
 │── about.html <br />
 │── about.css <br />
-└── about.js <br />
+│── about.js <br />
 Products (Flame + To-Do List) <br />
 │── products.html <br />
 │── products.css <br />
-└── products.js <br />
+│── products.js <br />
 To-Do List (standalone) <br />
 │── todolist.html <br />
 │── todolist.css <br />
-└── todolist.js <br />
+│── todolist.js <br />
 Contact Page <br />
 |── contact.html <br />
 |── contact.css <br />
-└── contact.js <br />
+│── contact.js <br />
 Project logo <br />
 └── logo.png <br />
 Documentation <br />
@@ -119,27 +119,26 @@ Captured screenshots/GIFs for portfolio/demo purposes.
 ✅	       About page
 ✅	       Products (Flame + To-Do List)
 ✅	       Contact page
-✅	        Fully responsive design
+✅	       Fully responsive design
 🔜	        AI chatbot integration ("Chat with Flame")
 🔜	        Backend database for newsletter & contact form
-✅	        Enhanced animations for To-Do List & chatbot button
+✅	       Enhanced animations for To-Do List & chatbot button
 
 
 ## 💡 Future Improvements
-- Improve responsiveness for all screen sizes.  
-- Add dark mode toggle for better accessibility.  
-- Integrate backend support (Node.js / Firebase) for:  
-  - Newsletter subscription  
-  - Contact form submissions  
-- Build an AI-powered chatbot ("Chat with Flame") for interactive Q&A.  
-- Enhance To-Do List with:  
-  - Task categories & priorities  
-  - Local storage or cloud sync  
-  - Drag-and-drop reordering  
-- Add animations & transitions for smoother UX.  
-- Optimize performance (lazy loading images, minifying CSS/JS).  
-- Prepare for deployment on platforms like **Vercel / Netlify / GitHub Pages**.  
-
+- Improve responsiveness for all screen sizes.
+- Add dark mode toggle for better accessibility.
+- Integrate backend support (Node.js / Firebase) for:
+  - Newsletter subscription
+  - Contact form submissions
+- Build an AI-powered chatbot ("Chat with Flame") for interactive Q&A.
+- Enhance To-Do List with:
+  - Task categories & priorities
+  - Local storage or cloud sync
+  - Drag-and-drop reordering
+- Add animations & transitions for smoother UX.
+- Optimize performance (lazy loading images, minifying CSS/JS).
+- Prepare for deployment on platforms like **Vercel / Netlify / GitHub Pages**.
 
 
 ### 👨‍💻 Author
