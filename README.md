@@ -44,23 +44,23 @@ Homepage <br />
 │── home.html <br />
 │── home.css <br />
 │── home.js <br />
+About Page
+│── about.html <br />
+│── about.css <br />
+│── about.js <br />
 
-│── about.html         # About Page
-│── about.css
-│── about.js
+│── products.html <br />     # Products (Flame + To-Do List)
+│── products.css <br />
+│── products.js <br />
+│── todolist.html <br /> # To-Do List (standalone)
+│── todolist.css <br />
+│── todolist.js <br />
 
-│── products.html      # Products (Flame + To-Do List)
-│── products.css
-│── products.js
-│── todolist.html      # To-Do List (standalone)
-│── todolist.css
-│── todolist.js
+│── contact.html <br /> # Contact Page
+│── contact.css <br />
+│── contact.js <br />
 
-│── contact.html       # Contact Page
-│── contact.css
-│── contact.js
-
-│── logo.png           # Project logo
+│── logo.png           (Project logo)
 │── screenshots/       # Screenshots for README
 │── gifs/              # GIF demos for README
 └── README.md          # Documentation
