@@ -44,19 +44,20 @@ Homepage <br />
 │── home.html <br />
 │── home.css <br />
 │── home.js <br />
-About Page
+About Page <br />
 │── about.html <br />
 │── about.css <br />
 │── about.js <br />
-
-│── products.html <br />     # Products (Flame + To-Do List)
+Products (Flame + To-Do List) <br />
+│── products.html <br />
 │── products.css <br />
 │── products.js <br />
-│── todolist.html <br /> # To-Do List (standalone)
+To-Do List (standalone) <br />
+│── todolist.html <br />
 │── todolist.css <br />
 │── todolist.js <br />
-
-│── contact.html <br /> # Contact Page
+# Contact Page <br />
+│── contact.html <br />
 │── contact.css <br />
 │── contact.js <br />
 
