@@ -12,6 +12,7 @@ header {
   padding: 10px 10px 0px;
   background-color: #000;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -26,20 +27,24 @@ header {
   border-bottom: 1px solid #333;
   z-index: 1000;
 }
+
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo-image {
   height: 70px;
   width: auto;
 }
+
 .brand h1 {
   font-size: 30px;
   margin: 0;
   color: white;
 }
+
 .nav-links {
   position: absolute;
   left: 50%;
@@ -47,49 +52,44 @@ header {
   display: flex;
   gap: 25px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #a32020;
 }
 
-
-
-
-
-
 /* About Section */
 .about-container {
-    max-width: 1000px;
-    margin: 120px auto 50px auto; /* space for fixed navbar */
-    padding: 20px;
-    background: rgba(255, 69, 0, 0.05);
-    border: 1px solid rgba(255, 69, 0, 0.2);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    grid-template-columns: 2fr 1fr;
+  max-width: 1000px;
+  margin: 120px auto 50px auto;
+  /* space for fixed navbar */
+  padding: 20px;
+  background: rgba(255, 69, 0, 0.05);
+  border: 1px solid rgba(255, 69, 0, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  grid-template-columns: 2fr 1fr;
 }
 
 .about-container h2 {
-    font-size: 28px;
-    color: #ff7518;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 28px;
+  color: #ff7518;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-container p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #e0e0e0;
-    text-align: justify;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #e0e0e0;
+  text-align: justify;
 }
-
-
-
 
 /* FOOTER */
 footer {
@@ -98,8 +98,10 @@ footer {
   padding: 50px 20px 20px;
   font-family: 'Crimson Text', serif;
   /*border-top: 1px solid #333;*/
-  margin-top: 0; /* removes extra space */
+  margin-top: 0;
+  /* removes extra space */
 }
+
 footer h2 {
   font-size: 40px;
   text-align: center;
@@ -107,12 +109,14 @@ footer h2 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 footer p {
   font-size: 14px;
   text-align: center;
   color: #a32020;
   margin: 4px 0;
 }
+
 .footer-columns {
   display: flex;
   justify-content: center;
@@ -123,16 +127,19 @@ footer p {
   margin-top: 0px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .footer-columns div {
   text-align: center;
   min-width: 5px;
 }
+
 .footer-columns h4 {
   align-items: center;
   text-align: center;
   color: #a32020;
   margin-bottom: 10px;
 }
+
 .footer-columns a {
   display: block;
   color: white;
@@ -140,7 +147,7 @@ footer p {
   font-size: 14px;
   margin: 4px 0;
 }
+
 .footer-columns a:hover {
   color: #a32020;
 }
-

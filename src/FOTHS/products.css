@@ -12,6 +12,7 @@ header {
   padding: 10px 10px 0px;
   background-color: #000;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -26,20 +27,24 @@ header {
   border-bottom: 1px solid #333;
   z-index: 1000;
 }
+
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo-image {
   height: 70px;
   width: auto;
 }
+
 .brand h1 {
   font-size: 30px;
   margin: 0;
   color: white;
 }
+
 .nav-links {
   position: absolute;
   left: 50%;
@@ -47,16 +52,17 @@ header {
   display: flex;
   gap: 25px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #a32020;
 }
-
 
 /* Products section */
 .products-container {
@@ -65,11 +71,13 @@ header {
   padding: 20px;
   text-align: center;
 }
+
 .products-container h2 {
   font-size: 32px;
   color: #a32020;
   margin-bottom: 10px;
 }
+
 .subtitle {
   font-size: 18px;
   color: #aaa;
@@ -82,6 +90,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+
 .product-card {
   background: #111;
   border: 1px solid rgba(255, 117, 24, 0.3);
@@ -90,20 +99,24 @@ header {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(255, 117, 24, 0.15);
 }
+
 .product-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 10px #a32020;
 }
+
 .product-card h3 {
   color: #a32020;
   font-size: 24px;
   margin-bottom: 15px;
 }
+
 .product-card p {
   font-size: 16px;
   color: #ddd;
   margin-bottom: 20px;
 }
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -114,6 +127,7 @@ header {
   font-weight: bold;
   transition: background 0.3s;
 }
+
 .btn:hover {
   background: #a32020;
   box-shadow: 0 0 10px #a32020;
@@ -126,8 +140,10 @@ footer {
   padding: 50px 20px 20px;
   font-family: 'Crimson Text', serif;
   /*border-top: 1px solid #333;*/
-  margin-top: 0; /* removes extra space */
+  margin-top: 0;
+  /* removes extra space */
 }
+
 footer h2 {
   font-size: 40px;
   text-align: center;
@@ -135,12 +151,14 @@ footer h2 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 footer p {
   font-size: 14px;
   text-align: center;
   color: #a32020;
   margin: 4px 0;
 }
+
 .footer-columns {
   display: flex;
   justify-content: center;
@@ -151,16 +169,19 @@ footer p {
   margin-top: 0px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .footer-columns div {
   text-align: center;
   min-width: 5px;
 }
+
 .footer-columns h4 {
   align-items: center;
   text-align: center;
   color: #a32020;
   margin-bottom: 10px;
 }
+
 .footer-columns a {
   display: block;
   color: white;
@@ -168,6 +189,7 @@ footer p {
   font-size: 14px;
   margin: 4px 0;
 }
+
 .footer-columns a:hover {
   color: #a32020;
 }

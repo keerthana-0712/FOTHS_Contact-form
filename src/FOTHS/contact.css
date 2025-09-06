@@ -12,6 +12,7 @@ header {
   padding: 10px 10px 0px;
   background-color: #000;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -26,20 +27,24 @@ header {
   border-bottom: 1px solid #333;
   z-index: 1000;
 }
+
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo-image {
   height: 70px;
   width: auto;
 }
+
 .brand h1 {
   font-size: 30px;
   margin: 0;
   color: white;
 }
+
 .nav-links {
   position: absolute;
   left: 50%;
@@ -47,12 +52,14 @@ header {
   display: flex;
   gap: 25px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #a32020;
 }
@@ -63,7 +70,8 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "info form";
   gap: 30px;
-  padding: 140px 40px 40px; /* 🔥 Added top padding to avoid overlap with navbar */
+  padding: 140px 40px 40px;
+  /* 🔥 Added top padding to avoid overlap with navbar */
 }
 
 /* Info Section */
@@ -73,6 +81,7 @@ header {
   color: #ff6347;
   text-shadow: 0 0 15px #ff4500;
 }
+
 .info p {
   margin-bottom: 15px;
   font-size: 1.1rem;
@@ -80,20 +89,22 @@ header {
   color: #ddd;
 }
 
-
 /* Contact Form Section */
 .form-section {
   background: rgba(255, 69, 0, 0.05);
-  padding: 20px; /* 🔥 increased padding inside */
+  padding: 20px;
+  /* 🔥 increased padding inside */
   border: 1px solid rgba(255, 69, 0, 0.2);
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
   grid-area: form;
-  max-width: 750px; /* 🔥 wider form box */
-  width: 90%;       /* takes full width up to max */
-  margin: 0 auto;    /* keeps it centered */
+  max-width: 750px;
+  /* 🔥 wider form box */
+  width: 90%;
+  /* takes full width up to max */
+  margin: 0 auto;
+  /* keeps it centered */
 }
-
 
 form {
   display: flex;
@@ -102,10 +113,12 @@ form {
 
 label {
   margin: 12px 0 5px;
-  color: #ff4500; /* 🔥 Fire orange labels */
+  color: #ff4500;
+  /* 🔥 Fire orange labels */
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   border: 1px solid #ff6347;
   border-radius: 5px;
@@ -114,7 +127,8 @@ input, textarea {
   outline: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #ff4500;
   box-shadow: 0 0 10px #ff4500;
 }
@@ -130,6 +144,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
 button:hover {
   background: linear-gradient(45deg, #ff6347, #ff4500);
   box-shadow: 0 0 12px #ff4500;
@@ -146,9 +161,11 @@ button:hover {
 /* Responsive Fix */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* 🔥 Stack content */
+    grid-template-columns: 1fr;
+    /* 🔥 Stack content */
     padding: 120px 20px;
   }
+
   .nav-links {
     flex-direction: column;
     position: static;
@@ -157,7 +174,6 @@ button:hover {
   }
 }
 
-
 /* FOOTER */
 footer {
   background-color: #000;
@@ -165,8 +181,10 @@ footer {
   padding: 50px 20px 20px;
   font-family: 'Crimson Text', serif;
   /*border-top: 1px solid #333;*/
-  margin-top: 0; /* removes extra space */
+  margin-top: 0;
+  /* removes extra space */
 }
+
 footer h2 {
   font-size: 40px;
   text-align: center;
@@ -174,12 +192,14 @@ footer h2 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 footer p {
   font-size: 14px;
   text-align: center;
   color: #a32020;
   margin: 4px 0;
 }
+
 .footer-columns {
   display: flex;
   justify-content: center;
@@ -190,16 +210,19 @@ footer p {
   margin-top: 0px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .footer-columns div {
   text-align: center;
   min-width: 5px;
 }
+
 .footer-columns h4 {
   align-items: center;
   text-align: center;
   color: #a32020;
   margin-bottom: 10px;
 }
+
 .footer-columns a {
   display: block;
   color: white;
@@ -207,7 +230,7 @@ footer p {
   font-size: 14px;
   margin: 4px 0;
 }
+
 .footer-columns a:hover {
   color: #a32020;
 }
-

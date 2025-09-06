@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,28 +8,27 @@
   <link rel="icon" type="image/x-icon" href="logo.png">
   <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
 
   <!-- Header -->
-<header class="main-header">
-  <div class="navbar">
-    <div class="brand">
-      <a href="/" class="logo">
-        <img src="logo.png" alt="FOTHS Flame Logo" class="logo-image" />
-      </a>
-      <h1>FOTHS</h1>
+  <header class="main-header">
+    <div class="navbar">
+      <div class="brand">
+        <a href="/" class="logo">
+          <img src="logo.png" alt="FOTHS Flame Logo" class="logo-image" />
+        </a>
+        <h1>FOTHS</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-
-    <nav class="nav-links">
-  <a href="home.html" class="active">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="products.html">Products</a>
-  <a href="contact.html">Contact</a>
-</nav>
-  </div>
-</header>
-
-
+  </header>
 
   <!-- Hero Section -->
   <!-- Main Message -->
@@ -37,8 +37,7 @@
     It <span class="highlight">Lives</span> Within. It <span class="highlight">Transforms</span> Everything.
   </div>
 
-
-<!-- 🔥 FLAME INTRO SECTION (Homepage) -->
+  <!-- 🔥 FLAME INTRO SECTION (Homepage) -->
   <section class="flame-intro">
     <h2>🔥 Meet Flame - Your AI </h2>
     <p>
@@ -54,33 +53,31 @@
     <button id="openChat">💬 Chat with Flame</button>
     <p class="note">*Click the button to start chatting with Flame!</p>
   </section>
-</main>
+  </main>
 
-<br />
-<br />
-<br />
-
+  <br />
+  <br />
+  <br />
 
   <!-- Floating Flame (fixed beside scrollbar) -->
   <div class="flame-container">
     <div class="flame">
-    <svg viewBox="0 0 40 120" xmlns="http://www.w3.org/2000/svg" class="flame">
-      <defs>
-        <linearGradient id="flameGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#FFF45B" />
-          <stop offset="25%" stop-color="#FFB22E" />
-          <stop offset="45%" stop-color="#FF7A18" />
-          <stop offset="65%" stop-color="#D9381E" />
-          <stop offset="85%" stop-color="#8C1C13" />
-          <stop offset="100%" stop-color="#4A201F" />
-        </linearGradient>
-      </defs>
+      <svg viewBox="0 0 40 120" xmlns="http://www.w3.org/2000/svg" class="flame">
+        <defs>
+          <linearGradient id="flameGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFF45B" />
+            <stop offset="25%" stop-color="#FFB22E" />
+            <stop offset="45%" stop-color="#FF7A18" />
+            <stop offset="65%" stop-color="#D9381E" />
+            <stop offset="85%" stop-color="#8C1C13" />
+            <stop offset="100%" stop-color="#4A201F" />
+          </linearGradient>
+        </defs>
 
-      <path d="M20 0
+        <path d="M20 0
       C 28 90, 38 100, 20 100
-      C 2 90, 12 100, 20 10 Z"
-            fill="url(#flameGradient)"/>
-    </svg>
+      C 2 90, 12 100, 20 10 Z" fill="url(#flameGradient)" />
+      </svg>
     </div>
   </div>
 
@@ -108,20 +105,20 @@
     </div>
 
     <div class="newsletter">
-  <div class="newsletter-box">
-    <h2>Join the Newsletter</h2>
-    <p>Receive FOTHS Updates and announcements directly to your inbox.</p>
+      <div class="newsletter-box">
+        <h2>Join the Newsletter</h2>
+        <p>Receive FOTHS Updates and announcements directly to your inbox.</p>
 
-    <!-- Form -->
-    <form id="newsletter-form">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
+        <!-- Form -->
+        <form id="newsletter-form">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
 
-    <p class="privacy">We respect your privacy. No spam, only essential updates. </p>
+        <p class="privacy">We respect your privacy. No spam, only essential updates. </p>
 
-  </div>
-</div>
+      </div>
+    </div>
 
     <div class="footer-bottom">
       <p>&copy; 2025 FOTHS. All rights reserved.</p>
@@ -129,7 +126,8 @@
   </footer>
 
   <!-- Link external JavaScript -->
-<script src="home.js"></script>
+  <script src="home.js"></script>
 
 </body>
+
 </html>

@@ -17,6 +17,7 @@ header {
   padding: 10px 10px 0px;
   background-color: #000;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -31,20 +32,24 @@ header {
   border-bottom: 1px solid #333;
   z-index: 1000;
 }
+
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo-image {
   height: 70px;
   width: auto;
 }
+
 .brand h1 {
   font-size: 30px;
   margin: 0;
   color: white;
 }
+
 .nav-links {
   position: absolute;
   left: 50%;
@@ -52,16 +57,17 @@ header {
   display: flex;
   gap: 25px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #a32020;
 }
-
 
 .todo-container {
   align-items: center;
@@ -71,7 +77,8 @@ header {
   box-shadow: 0 4px 20px rgba(255, 69, 0, 0.3);
   width: 400px;
   text-align: center;
-  margin-top: 120px; /* to avoid overlap with navbar */
+  margin-top: 120px;
+  /* to avoid overlap with navbar */
 }
 
 .todo-container h1 {
@@ -156,7 +163,6 @@ li:hover {
   color: #ff1a1a;
 }
 
-
 /* Footer */
 footer {
   background-color: #000;
@@ -164,8 +170,10 @@ footer {
   padding: 50px 20px 20px;
   font-family: 'Crimson Text', serif;
   /*border-top: 1px solid #333;*/
-  margin-top: 0; /* removes extra space */
+  margin-top: 0;
+  /* removes extra space */
 }
+
 footer h2 {
   font-size: 40px;
   text-align: center;
@@ -173,12 +181,14 @@ footer h2 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 footer p {
   font-size: 14px;
   text-align: center;
   color: #a32020;
   margin: 4px 0;
 }
+
 .footer-columns {
   display: flex;
   justify-content: center;
@@ -189,16 +199,19 @@ footer p {
   margin-top: 0px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .footer-columns div {
   text-align: center;
   min-width: 5px;
 }
+
 .footer-columns h4 {
   align-items: center;
   text-align: center;
   color: #a32020;
   margin-bottom: 10px;
 }
+
 .footer-columns a {
   display: block;
   color: white;
@@ -206,8 +219,7 @@ footer p {
   font-size: 14px;
   margin: 4px 0;
 }
+
 .footer-columns a:hover {
   color: #a32020;
 }
-
-

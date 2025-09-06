@@ -13,7 +13,6 @@ header {
   background-color: #000;
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
@@ -29,21 +28,23 @@ header {
   z-index: 1000;
 }
 
-
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo-image {
   height: 70px;
   width: auto;
 }
+
 .brand h1 {
   font-size: 30px;
   margin: 0;
   color: white;
 }
+
 .nav-links {
   position: absolute;
   left: 50%;
@@ -51,12 +52,14 @@ header {
   display: flex;
   gap: 25px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #a32020;
 }
@@ -66,7 +69,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
-  padding: 140px 20px 60px; /* 🔥 top padding for fixed navbar */
+  padding: 140px 20px 60px;
+  /* 🔥 top padding for fixed navbar */
 }
 
 /* MAIN TEXT */
@@ -75,12 +79,13 @@ header {
   text-align: center;
   margin: 300px 20px;
   font-size: 40px;
-  grid-column: 1 / -1; /* spans all columns */
+  grid-column: 1 / -1;
+  /* spans all columns */
 }
+
 .highlight {
   color: #a32020;
 }
-
 
 /* FLAME INTRO SECTION */
 .flame-intro {
@@ -89,18 +94,22 @@ header {
   background: #000;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  grid-column: 1 / -1; /* spans all columns */
+  grid-column: 1 / -1;
+  /* spans all columns */
 }
+
 .flame-intro h2 {
   color: #a32020;
   font-size: 32px;
 }
+
 .flame-intro p {
   font-size: 18px;
   max-width: 600px;
   margin: 10px auto 20px;
   color: #ccc;
 }
+
 .flame-intro ul {
   list-style: none;
   padding: 0;
@@ -108,10 +117,12 @@ header {
   max-width: 500px;
   text-align: left;
 }
+
 .flame-intro li {
   margin: 8px 0;
   font-size: 16px;
 }
+
 .flame-intro button {
   margin-top: 20px;
   padding: 12px 24px;
@@ -122,28 +133,33 @@ header {
   font-size: 16px;
   cursor: pointer;
 }
+
 .flame-intro button:hover {
   background: #811717;
 }
 
-
 /* FLOATING FLAME */
 /* Flame on the side */
 .flame-container {
-  position: absolute;   /* instead of fixed */
-  right: 5px;           /* keeps it near scrollbar */
-  top: 50%;             /* vertically middle */
+  position: absolute;
+  /* instead of fixed */
+  right: 5px;
+  /* keeps it near scrollbar */
+  top: 50%;
+  /* vertically middle */
   transform: translateY(-50%);
   width: 40px;
   height: 60px;
-  pointer-events: none; /* so it doesn’t block clicks */
+  pointer-events: none;
+  /* so it doesn’t block clicks */
   z-index: 999;
 }
 
 .floating-flame {
   position: fixed;
   top: 50%;
-  right: 8px; /* close to scrollbar */
+  right: 8px;
+  /* close to scrollbar */
   transform: translateY(-50%);
   z-index: 999;
 }
@@ -155,24 +171,41 @@ header {
 
   /* Apply BOTH animations */
   animation: flicker 1.5s infinite alternate,
-            flame 12s ease-in-out infinite;
+    flame 12s ease-in-out infinite;
 }
 
 /* Flicker Effect */
 @keyframes flicker {
-  0%   { transform: scale(1) translateY(0); opacity: 0.95; }
-  50%  { transform: scale(1.05) translateY(-2px); opacity: 1; }
-  100% { transform: scale(0.97) translateY(2px); opacity: 0.9; }
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 0.95;
+  }
+
+  50% {
+    transform: scale(1.05) translateY(-2px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.97) translateY(2px);
+    opacity: 0.9;
+  }
 }
 
 /* Up and Down Floating Movement */
 @keyframes flame {
-  0%   { transform: translateY(-250px); }
-  50%  { transform: translateY(100px); }
-  100% { transform: translateY(-250px); }
+  0% {
+    transform: translateY(-250px);
+  }
+
+  50% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(-250px);
+  }
 }
-
-
 
 /* FOOTER */
 footer {
@@ -181,8 +214,10 @@ footer {
   padding: 50px 20px 20px;
   font-family: 'Crimson Text', serif;
   /*border-top: 1px solid #333;*/
-  margin-top: 0; /* removes extra space */
+  margin-top: 0;
+  /* removes extra space */
 }
+
 footer h2 {
   font-size: 40px;
   text-align: center;
@@ -190,12 +225,14 @@ footer h2 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 footer p {
   font-size: 14px;
   text-align: center;
   color: #a32020;
   margin: 4px 0;
 }
+
 .footer-columns {
   display: flex;
   justify-content: center;
@@ -206,16 +243,19 @@ footer p {
   margin-top: 0px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .footer-columns div {
   text-align: center;
   min-width: 5px;
 }
+
 .footer-columns h4 {
   align-items: center;
   text-align: center;
   color: #a32020;
   margin-bottom: 10px;
 }
+
 .footer-columns a {
   display: block;
   color: white;
@@ -223,9 +263,11 @@ footer p {
   font-size: 14px;
   margin: 4px 0;
 }
+
 .footer-columns a:hover {
   color: #a32020;
 }
+
 .newsletter {
   display: flex;
   justify-content: center;
@@ -233,8 +275,10 @@ footer p {
   padding: 40px 20px;
   background-color: #000;
   color: white;
-  grid-column: 1 / -1; /* spans all columns */
+  grid-column: 1 / -1;
+  /* spans all columns */
 }
+
 .newsletter-box {
   background-color: transparent;
   border-radius: 16px;
@@ -244,15 +288,18 @@ footer p {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
   text-align: center;
 }
+
 .newsletter-box h2 {
   font-size: 30px;
   margin-top: auto;
   color: #a32020;
 }
+
 .newsletter-box p {
   font-size: 14px;
   color: white;
 }
+
 .newsletter-box input[type="email"] {
   padding: 10px;
   width: 80%;
@@ -261,6 +308,7 @@ footer p {
   border: none;
   font-size: 16px;
 }
+
 .newsletter-box button {
   padding: 10px 20px;
   background-color: #a32020;
@@ -271,15 +319,16 @@ footer p {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .newsletter-box button:hover {
   background-color: #811717;
 }
+
 .newsletter-box .privacy {
   font-size: 12px;
   color: #888;
   margin-top: 10px;
 }
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -287,12 +336,13 @@ footer p {
     padding: 120px 15px 40px;
     gap: 40px;
   }
+
   .main-text {
     font-size: 28px;
     margin: 60px 10px;
   }
+
   .flame-intro {
     padding: 50px 15px;
   }
 }
-

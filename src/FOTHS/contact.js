@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ✅ If all validations pass
-    alert("🔥 Thank you, " + name + "! Your message has been sent successfully.");
+    alert(
+      "🔥 Thank you, " + name + "! Your message has been sent successfully."
+    );
     form.reset(); // Clear the form fields
   });
 });
