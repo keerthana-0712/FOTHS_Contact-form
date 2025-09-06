@@ -39,7 +39,7 @@ This is the homepage project for **FOTHS**, featuring a modern design with anima
 
 
 ### 📂 Project Structure
-src/FOTHS /
+src/FOTHS < br/>
 │── home.html          # Homepage
 │── home.css
 │── home.js
