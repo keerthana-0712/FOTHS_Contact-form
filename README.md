@@ -43,25 +43,25 @@ src/FOTHS <br />
 Homepage <br />
 │── home.html <br />
 │── home.css <br />
-│── home.js <br />
+└── home.js <br />
 About Page <br />
 │── about.html <br />
 │── about.css <br />
-│── about.js <br />
+└── about.js <br />
 Products (Flame + To-Do List) <br />
 │── products.html <br />
 │── products.css <br />
-│── products.js <br />
+└── products.js <br />
 To-Do List (standalone) <br />
 │── todolist.html <br />
 │── todolist.css <br />
-│── todolist.js <br />
+└── todolist.js <br />
 Contact Page <br />
-│── contact.html <br />
-│── contact.css <br />
-│── contact.js <br />
+|── contact.html <br />
+|── contact.css <br />
+└── contact.js <br />
 Project logo <br />
-│── logo.png <br />
+└── logo.png <br />
 Documentation <br />
 └── README.md <br />
 
